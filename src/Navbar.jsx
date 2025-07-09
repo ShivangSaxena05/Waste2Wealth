@@ -1,0 +1,26 @@
+import React from 'react'
+import { Link } from 'react-router'
+import logo from './assets/logo.png'
+
+const Navbar = () => {
+  return (<>
+    <nav className='flex px-10 justify-between items-center '>
+    <Link to="/" className='flex items-center text-xl'><img src={logo} width='54px'/>Waste<b>2</b>Wealth</Link>
+    <ul className='flex gap-10'>
+        <li><Link to="/Leaderboard">Leaderboard</Link></li>
+        <li><Link to="/RagMan">Ragman (Kawadi Wala)</Link></li>
+        <li><Link to="/NGOs">NGOs & Brands</Link></li>
+        <li><Link to="/Contact">Contact</Link></li>
+        <li><Link to="AboutUs">About Us</Link></li>
+      </ul>
+      <div className='flex gap-5'>
+        <button className=' px-4 py-1 bg-gray-200 border border-green-400 rounded-lg'>Sign Up</button>
+        <button className=' px-4 py-1 bg-gray-200 border border-green-400 rounded-lg'>Log In</button>
+      </div>
+    </nav>
+    <hr />
+  </>
+  )
+}
+
+export default Navbar
