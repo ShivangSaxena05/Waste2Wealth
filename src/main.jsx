@@ -5,14 +5,16 @@ import { BrowserRouter } from 'react-router'
 import './index.css'
 import App from './App.jsx'
 import Navbar from './Navbar.jsx'
+import Footer from './Footer.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
     <Navbar/>
     <Routes>
 
-      <Route path='/' element={<App/>}/>
+      <Route path='/*' element={<App/>}/>
     </Routes>
+    <Footer/>
     </BrowserRouter>
   </StrictMode>,
 )
