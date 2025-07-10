@@ -4,7 +4,7 @@ import coins from "../../assets/coins.svg"
 const Working = () => {
   return (
     <div>
-      <div className="py-10 bg-white text-center">
+      <div className="py-20  bg-white text-center">
         <h2 className="text-3xl font-bold mb-10">How It Works</h2>
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 px-4">
@@ -74,6 +74,9 @@ const Working = () => {
           </div>
         </div>
       </div>
+
+      
+
     </div>
   );
 };

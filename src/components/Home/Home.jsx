@@ -5,7 +5,7 @@ import Appdown from "./Appdown";
 const Home = () => {
   return (
     <>
-      <div className="container bg-green-50 flex justify-center items-center">
+      <div className="container bg-green-50 h-[100vh]  flex justify-center items-center">
         <div className="left w-[40%]">
           <h1 className="text-6xl font-bold">
             Turn Trash Into Treasure
