@@ -5,7 +5,7 @@ import Appdown from "./Appdown";
 const Home = () => {
   return (
     <>
-      <div className="container bg-green-50 h-[100vh]  flex justify-center items-center">
+      <div className="bg-green-50 h-[100vh] w-100% flex justify-evenly items-center">
         <div className="left w-[40%]">
           <h1 className="text-6xl font-bold">
             Turn Trash Into Treasure
@@ -83,8 +83,8 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="right w-[40%]">
-          <img src={trash} className="w-[80%]" />
+        <div className="right w-[30%]">
+          <img src={trash}/>
         </div>
       </div>
 

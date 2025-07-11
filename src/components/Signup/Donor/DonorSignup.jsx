@@ -40,9 +40,9 @@ const DonorSignup = () => {
   return (
     <div className="w-full  max-w-xl mx-auto">
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-        <h2 className="text-2xl font-bold text-gray-700 mb-2">Donor Signup</h2>
+        <h2 className="text-2xl font-bold  mb-2">Donor Signup</h2>
 
-        <div className='text-lime-800'>
+        <div >
           <label className="block mb-1">Full Name *</label>
           <input
             type="text"

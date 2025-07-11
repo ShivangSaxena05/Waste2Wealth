@@ -4,6 +4,7 @@ import { Routes,Route } from 'react-router'
 import Home from './components/Home/Home'
 import Footer from './Footer'
 import Leaderboard from './components/LeaderBoard/Leaderboard'
+import AboutUs from './components/AboutUs/AboutUs'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -12,6 +13,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/Leaderboard" element={<Leaderboard/>}/>
+      <Route path="AboutUs" element={<AboutUs/>}/>
       </Routes>
     </>
   )

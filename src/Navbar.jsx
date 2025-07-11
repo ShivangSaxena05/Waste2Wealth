@@ -19,7 +19,6 @@ const Navbar = () => {
         <li><Link to="/Leaderboard">Leaderboard</Link></li>
         <li><Link to="/RagMan">Ragman (Kawadi Wala)</Link></li>
         <li><Link to="/NGOs">NGOs & Brands</Link></li>
-        <li><Link to="/Contact">Contact</Link></li>
         <li><Link to="AboutUs">About Us</Link></li>
       </ul>
       <div className='flex gap-5'>
