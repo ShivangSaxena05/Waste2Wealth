@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 
-const NGOsSignup = () => {
+const DonorSignup = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
-    orgName: '',
-    contactName: '',
+    fullName: '',
     email: '',
     phone: '',
     password: '',
@@ -13,7 +12,7 @@ const NGOsSignup = () => {
     pincode: '',
     city: '',
     state: '',
-    docFile: null,
+    profilePic: null,
     referralCode: '',
     acceptedTerms: false,
   });
@@ -39,58 +38,43 @@ const NGOsSignup = () => {
   };
 
   return (
-    <div className="w-full max-w-xl mx-auto">
+    <div className="w-full  max-w-xl mx-auto">
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-        <h2 className="text-2xl font-bold mb-2">NGO / Brand Partner Signup</h2>
+        <h2 className="text-2xl font-bold text-gray-700 mb-2">Donor Signup</h2>
 
-        <div>
-          <label className="block mb-1">Organization Name *</label>
+        <div className='text-lime-800'>
+          <label className="block mb-1">Full Name *</label>
           <input
             type="text"
-            name="orgName"
+            name="fullName"
             required
-            placeholder="Enter your NGO or brand name"
+            placeholder="Enter your full name"
             className="w-full border px-3 py-2 rounded"
             onChange={handleChange}
           />
         </div>
 
         <div>
-          <label className="block mb-1">Contact Person *</label>
+          <label className="block mb-1">Email Address *</label>
           <input
-            type="text"
-            name="contactName"
+            type="email"
+            name="email"
             required
-            placeholder="Contact person’s name"
+            placeholder="Enter your email"
             className="w-full border px-3 py-2 rounded"
             onChange={handleChange}
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
-          <div>
-            <label className="block mb-1">Email Address *</label>
-            <input
-              type="email"
-              name="email"
-              required
-              placeholder="Enter email"
-              className="w-full border px-3 py-2 rounded"
-              onChange={handleChange}
-            />
-          </div>
-
-          <div>
-            <label className="block mb-1">Phone Number *</label>
-            <input
-              type="tel"
-              name="phone"
-              required
-              placeholder="Enter phone number"
-              className="w-full border px-3 py-2 rounded"
-              onChange={handleChange}
-            />
-          </div>
+        <div>
+          <label className="block mb-1">Phone Number</label>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Enter your phone number"
+            className="w-full border px-3 py-2 rounded"
+            onChange={handleChange}
+          />
         </div>
 
         <div>
@@ -99,7 +83,7 @@ const NGOsSignup = () => {
             type={showPassword ? 'text' : 'password'}
             name="password"
             required
-            placeholder="Create password"
+            placeholder="Enter your password"
             className="w-full border px-3 py-2 rounded"
             onChange={handleChange}
           />
@@ -111,7 +95,7 @@ const NGOsSignup = () => {
             type={showPassword ? 'text' : 'password'}
             name="confirmPassword"
             required
-            placeholder="Confirm password"
+            placeholder="Re-enter your password"
             className="w-full border px-3 py-2 rounded"
             onChange={handleChange}
           />
@@ -125,28 +109,11 @@ const NGOsSignup = () => {
         </div>
 
         <div>
-          <label className="block mb-1">NGO Type / Category *</label>
-          <select
-            name="ngoType"
-            required
-            className="w-full border px-3 py-2 rounded"
-            onChange={handleChange}
-          >
-            <option value="">Select Type</option>
-            <option value="education">Education</option>
-            <option value="environment">Environment</option>
-            <option value="healthcare">Healthcare</option>
-            <option value="sanitation">Sanitation</option>
-            <option value="others">Others</option>
-          </select>
-        </div>
-
-        <div>
-          <label className="block mb-1">Office Address *</label>
+          <label className="block mb-1">Address / Landmark *</label>
           <textarea
             name="address"
             required
-            placeholder="NGO / Company office address"
+            placeholder="E.g. near temple, market, etc."
             className="w-full border px-3 py-2 rounded"
             onChange={handleChange}
           ></textarea>
@@ -159,6 +126,7 @@ const NGOsSignup = () => {
               type="number"
               name="pincode"
               required
+              placeholder="6-digit pincode"
               className="w-full border px-3 py-2 rounded"
               onChange={handleChange}
             />
@@ -169,7 +137,7 @@ const NGOsSignup = () => {
             <input
               type="text"
               name="city"
-              placeholder="Auto-detect or enter manually"
+              placeholder="Auto-fill if GPS enabled"
               className="w-full border px-3 py-2 rounded"
               onChange={handleChange}
             />
@@ -185,19 +153,19 @@ const NGOsSignup = () => {
               <option value="">Select state</option>
               <option value="UP">Uttar Pradesh</option>
               <option value="MH">Maharashtra</option>
-              <option value="KA">Karnataka</option>
-              <option value="RJ">Rajasthan</option>
               <option value="DL">Delhi</option>
+              <option value="RJ">Rajasthan</option>
+              <option value="KA">Karnataka</option>
               {/* Add more states as needed */}
             </select>
           </div>
 
           <div>
-            <label className="block mb-1">Registration Document (optional)</label>
+            <label className="block mb-1">Profile Picture</label>
             <input
               type="file"
-              name="docFile"
-              accept=".pdf,.jpg,.jpeg,.png"
+              name="profilePic"
+              accept="image/*"
               className="w-full border px-3 py-2 rounded"
               onChange={handleChange}
             />
@@ -223,10 +191,7 @@ const NGOsSignup = () => {
             onChange={handleChange}
           />
           <label>
-            I accept the{' '}
-            <a href="#" className="underline text-blue-600">
-              Terms & Privacy Policy
-            </a>
+            I accept the <a href="#" className="underline text-blue-600">Terms & Privacy Policy</a>
           </label>
         </div>
 
@@ -234,11 +199,11 @@ const NGOsSignup = () => {
           type="submit"
           className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700"
         >
-          Register NGO / Brand
+          Create Account
         </button>
       </form>
     </div>
   );
 };
 
-export default NGOsSignup;
+export default DonorSignup;

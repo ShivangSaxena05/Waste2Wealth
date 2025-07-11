@@ -29,11 +29,11 @@ const Navbar = () => {
     </nav>
     <hr />
     {showSignup 
-    ? <Signup closeBox={closeBox} />
+    ? <Signup closeBox={closeBox} onClose={()=>{setShowSignup(false)}} />
     : null
     }
     {showLogIn
-    ? <Login closeBox={closeBox} />
+    ? <Login closeBox={closeBox} onClose={()=>{setShowLogIn(false)}} openSignup={()=>{setShowLogIn(false);setShowSignup(true);}} />
     : null
     }
   </>
