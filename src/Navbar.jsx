@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import logo from './assets/logo.png'
+import { BiSolidCoin } from 'react-icons/bi'
 import { useState } from 'react'
 import Signup from './components/Signup/signup'
 import Login from './components/Login/login'
@@ -22,6 +23,7 @@ const Navbar = () => {
         <li><Link to="AboutUs">About Us</Link></li>
       </ul>
       <div className='flex gap-5'>
+        <span className='px-5 py-1 border border-black rounded-2xl flex items-center gap-3'>0 <BiSolidCoin /></span>
         <button onClick={()=>{setShowSignup(true);setShowLogIn(false);}} className=' px-4 py-1 bg-gray-200 border border-green-400 rounded-lg'>Sign Up</button>
         <button onClick={()=>{setShowSignup(false);setShowLogIn(true);}} className=' px-4 py-1 bg-gray-200 border border-green-400 rounded-lg'>Log In</button>
       </div>
