@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Card = ({ PTitle, PPrice, PDesc }) => {
+const Card = ({ PTitle, PPrice, PDesc,PImage }) => {
   return (
     <div className="border border-black w-[200px] h-[260px] rounded-lg overflow-hidden shadow-md bg-white">
       <img
-        src="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp"
+        src={PImage}
         className="w-full h-[160px] object-cover rounded-t-lg"
         alt="Product"
       />

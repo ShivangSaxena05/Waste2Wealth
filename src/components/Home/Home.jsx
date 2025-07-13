@@ -8,7 +8,7 @@ const Home = () => {
     "price": 200,
     "description": "High-efficiency motor suitable for e-waste recycling.",
     "category": "E-Waste",
-    "image": "https://images.unsplash.com/photo-1618412391079-00c2fbc8f9fa"
+    "image": "https://images.unsplash.com/photo-1575505586569-646b2ca898fc?auto=format&fit=crop&w=600&h=400"
   },
   {
     "id": 2,
@@ -16,7 +16,7 @@ const Home = () => {
     "price": 150,
     "description": "Used smartphone in working condition.",
     "category": "E-Waste",
-    "image": "https://images.unsplash.com/photo-1580910051076-68b469efc1b7"
+    "image": "https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?auto=format&fit=crop&w=600&h=400"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@ const Home = () => {
     "price": 10,
     "description": "Bundle of 20 used plastic bottles.",
     "category": "Plastic",
-    "image": "https://images.unsplash.com/photo-1586608217373-7709ae0f43f9"
+    "image": "https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=600&h=400"
   },
   {
     "id": 4,
@@ -32,7 +32,7 @@ const Home = () => {
     "price": 5,
     "description": "Empty aluminum drink can for metal recycling.",
     "category": "Metal Waste",
-    "image": "https://images.unsplash.com/photo-1586948121881-bd2bd0e2c7d2"
+    "image": "https://images.unsplash.com/photo-1604404896565-a8d18a6d91c2?auto=format&fit=crop&w=600&h=400"
   },
   {
     "id": 5,
@@ -40,207 +40,127 @@ const Home = () => {
     "price": 20,
     "description": "Set of used newspapers and magazines.",
     "category": "Paper",
-    "image": "https://images.unsplash.com/photo-1554080353-a576cf803bda"
+    "image": "https://images.unsplash.com/photo-1510146758428-e5e4b17b8b6a?auto=format&fit=crop&w=600&h=400"
   },
   {
     "id": 6,
-    "title": "Old Laptop",
-    "price": 300,
-    "description": "Functional old laptop for parts or reuse.",
-    "category": "E-Waste",
-    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
-  },
-  {
-    "id": 7,
-    "title": "Plastic Crate",
-    "price": 40,
-    "description": "Used plastic crate ideal for recycling.",
-    "category": "Plastic",
-    "image": "https://images.unsplash.com/photo-1593353361741-938fcb083e78"
-  },
-  {
-    "id": 8,
-    "title": "Copper Wire",
-    "price": 100,
-    "description": "Bundle of stripped copper wire.",
-    "category": "Metal Waste",
-    "image": "https://images.unsplash.com/photo-1608222351217-d1a3422e2dc2"
-  },
-  {
-    "id": 9,
-    "title": "Magazine Bundle",
-    "price": 15,
-    "description": "Stack of old magazines.",
-    "category": "Paper",
-    "image": "https://images.unsplash.com/photo-1588315029754-bca0b5776cc5"
-  },
-  {
-    "id": 10,
-    "title": "Glass Jar",
-    "price": 8,
-    "description": "Reusable glass jar for recycling.",
-    "category": "Glass",
-    "image": "https://images.unsplash.com/photo-1576395468834-44e810d56b2e"
-  },
-  {
-    "id": 11,
     "title": "Washing Machine",
     "price": 500,
     "description": "Old washing machine for recycling.",
     "category": "E-Waste",
-    "image": "https://images.unsplash.com/photo-1601440522514-6856e6c52b11"
+    "image": "https://images.unsplash.com/photo-1626804475297-41608ea09aeb?auto=format&fit=crop&w=600&h=400"
   },
   {
-    "id": 12,
+    "id": 7,
+    "title": "Iron Rod",
+    "price": 70,
+    "description": "Scrap iron rods for recycling.",
+    "category": "Metal Waste",
+    "image": "https://images.unsplash.com/photo-1611095772763-5b4d44d04792?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 8,
+    "title": "Used Notebook",
+    "price": 5,
+    "description": "Partially used paper notebook.",
+    "category": "Paper",
+    "image": "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 9,
+    "title": "Glass Bottle",
+    "price": 6,
+    "description": "Used green glass bottle.",
+    "category": "Glass",
+    "image": "https://images.unsplash.com/photo-1592194996308-7b43878e84b6?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 10,
+    "title": "Wrench Tool",
+    "price": 30,
+    "description": "Old metal wrench tool.",
+    "category": "Metal Waste",
+    "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 11,
     "title": "Plastic Basket",
     "price": 25,
     "description": "Colored plastic basket, reusable.",
     "category": "Plastic",
-    "image": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809"
+    "image": "https://images.unsplash.com/photo-1567533666097-9e6f9b7d0b27?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 12,
+    "title": "Steel Spoon",
+    "price": 2,
+    "description": "Old steel kitchen spoon.",
+    "category": "Metal Waste",
+    "image": "https://images.unsplash.com/photo-1594489573454-3a9e7b2e4dab?auto=format&fit=crop&w=600&h=400"
   },
   {
     "id": 13,
-    "title": "Steel Spoon Set",
-    "price": 30,
-    "description": "Used cutlery set.",
-    "category": "Metal Waste",
-    "image": "https://images.unsplash.com/photo-1589927986089-35812388d1fd"
+    "title": "Shredded Paper",
+    "price": 3,
+    "description": "Recyclable shredded office paper.",
+    "category": "Paper",
+    "image": "https://images.unsplash.com/photo-1603481547570-023c8fd2c4e6?auto=format&fit=crop&w=600&h=400"
   },
   {
     "id": 14,
-    "title": "Old Newspapers",
-    "price": 12,
-    "description": "Weekly collected newspapers.",
-    "category": "Paper",
-    "image": "https://images.unsplash.com/photo-1580136600728-e4b0ef52d7b4"
+    "title": "Glass Cup",
+    "price": 5,
+    "description": "Reusable glass drinking cup.",
+    "category": "Glass",
+    "image": "https://images.unsplash.com/photo-1590071089560-5e3b88a52b6c?auto=format&fit=crop&w=600&h=400"
   },
   {
     "id": 15,
-    "title": "Glass Bottle",
-    "price": 6,
-    "description": "Green glass beverage bottle.",
-    "category": "Glass",
-    "image": "https://images.unsplash.com/photo-1583430902701-bd0bd3c6e0c2"
+    "title": "Used Printer",
+    "price": 200,
+    "description": "Old inkjet printer for e-waste recycling.",
+    "category": "E-Waste",
+    "image": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&h=400"
   },
   {
     "id": 16,
-    "title": "Tablet",
-    "price": 250,
-    "description": "Cracked screen tablet, still functional.",
-    "category": "E-Waste",
-    "image": "https://images.unsplash.com/photo-1611078489935-43be30dcb33c"
+    "title": "Plastic Chair",
+    "price": 80,
+    "description": "Broken plastic chair.",
+    "category": "Plastic",
+    "image": "https://images.unsplash.com/photo-1592078615290-abb0f6d16782?auto=format&fit=crop&w=600&h=400"
   },
   {
     "id": 17,
-    "title": "Plastic Bag Bundle",
-    "price": 5,
-    "description": "100 used plastic bags.",
-    "category": "Plastic",
-    "image": "https://images.unsplash.com/photo-1614339267336-d2e43fcfa4d9"
+    "title": "Computer Monitor",
+    "price": 220,
+    "description": "Old monitor for e-waste recycling.",
+    "category": "E-Waste",
+    "image": "https://images.unsplash.com/photo-1586210579191-33b45e38fa2c?auto=format&fit=crop&w=600&h=400"
   },
   {
     "id": 18,
-    "title": "Iron Pipe",
-    "price": 50,
-    "description": "Scrap iron pipe section.",
-    "category": "Metal Waste",
-    "image": "https://images.unsplash.com/photo-1579546929303-4bc4f1c325c8"
+    "title": "Plastic Bucket",
+    "price": 30,
+    "description": "Old plastic bucket for reuse.",
+    "category": "Plastic",
+    "image": "https://images.unsplash.com/photo-1598620617361-73d0c0f89cc7?auto=format&fit=crop&w=600&h=400"
   },
   {
     "id": 19,
-    "title": "Office Papers",
-    "price": 18,
-    "description": "Mixed office documents and sheets.",
-    "category": "Paper",
-    "image": "https://images.unsplash.com/photo-1610375261626-53cc4e728d1a"
+    "title": "Metal Tray",
+    "price": 12,
+    "description": "Old steel food tray.",
+    "category": "Metal Waste",
+    "image": "https://images.unsplash.com/photo-1611930022073-8e2d7e1e1dc7?auto=format&fit=crop&w=600&h=400"
   },
   {
     "id": 20,
-    "title": "Broken Glass Plate",
-    "price": 3,
-    "description": "Shattered but reusable glass plate.",
-    "category": "Glass",
-    "image": "https://images.unsplash.com/photo-1584943318786-6f2b6a1767e3"
-  },
-  {
-    "id": 21,
-    "title": "Fridge Compressor",
-    "price": 350,
-    "description": "Old compressor for scrap.",
-    "category": "E-Waste",
-    "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45"
-  },
-  {
-    "id": 22,
-    "title": "Plastic Drum",
-    "price": 80,
-    "description": "Large blue plastic drum.",
-    "category": "Plastic",
-    "image": "https://images.unsplash.com/photo-1599058917210-cacb308948a8"
-  },
-  {
-    "id": 23,
-    "title": "Aluminum Rod",
-    "price": 60,
-    "description": "Scrap aluminum rod piece.",
-    "category": "Metal Waste",
-    "image": "https://images.unsplash.com/photo-1609879561435-c3c86b92f6e4"
-  },
-  {
-    "id": 24,
-    "title": "Cardboard Box",
-    "price": 8,
-    "description": "Medium-sized cardboard box.",
-    "category": "Paper",
-    "image": "https://images.unsplash.com/photo-1598935881701-87b59aa5d83e"
-  },
-  {
-    "id": 25,
-    "title": "Broken Mirror",
+    "title": "Glass Plate",
     "price": 7,
-    "description": "Cracked mirror piece.",
+    "description": "Clear glass dinner plate.",
     "category": "Glass",
-    "image": "https://images.unsplash.com/photo-1625840469462-1e08cfdd31c5"
-  },
-  {
-    "id": 26,
-    "title": "Computer Monitor",
-    "price": 220,
-    "description": "Old monitor for recycling.",
-    "category": "E-Waste",
-    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
-  },
-  {
-    "id": 27,
-    "title": "Plastic Tumbler",
-    "price": 4,
-    "description": "Reusable plastic cup.",
-    "category": "Plastic",
-    "image": "https://images.unsplash.com/photo-1617957747065-8ffcefa06b15"
-  },
-  {
-    "id": 28,
-    "title": "Steel Scrap",
-    "price": 90,
-    "description": "Mixed steel scrap items.",
-    "category": "Metal Waste",
-    "image": "https://images.unsplash.com/photo-1596212925949-d07d3d4cc6a6"
-  },
-  {
-    "id": 29,
-    "title": "Paper Shred",
-    "price": 6,
-    "description": "Confidential shredded papers.",
-    "category": "Paper",
-    "image": "https://images.unsplash.com/photo-1626190131262-2c2ab3ee711b"
-  },
-  {
-    "id": 30,
-    "title": "Glass Chips",
-    "price": 2,
-    "description": "Tiny pieces of broken colored glass.",
-    "category": "Glass",
-    "image": "https://images.unsplash.com/photo-1560343090-f0409e92791a"
+    "image": "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?auto=format&fit=crop&w=600&h=400"
   }
 ]
 
@@ -263,7 +183,7 @@ const Home = () => {
       <div className="cards px-10 flex flex-wrap gap-5 justify-evenly mt-6">
         {Products.map((e)=>{
           return (
-         <Card PTitle={e.title} PPrice={e.price} PDesc={e.description} />)
+         <Card PTitle={e.title} PPrice={e.price} PDesc={e.description} PImage={e.image} />)
         })}
       </div>
     
