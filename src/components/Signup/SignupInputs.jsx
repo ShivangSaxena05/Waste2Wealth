@@ -1,19 +1,14 @@
 import React, { useState } from 'react';
 
-const DonorSignup = () => {
+const SignupInputs = ({role}) => {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
+    role: role,
     fullName: '',
     email: '',
     phone: '',
     password: '',
     confirmPassword: '',
-    address: '',
-    pincode: '',
-    city: '',
-    state: '',
-    profilePic: null,
-    referralCode: '',
     acceptedTerms: false,
   });
 
@@ -38,10 +33,8 @@ const DonorSignup = () => {
   };
 
   return (
-    <div className="w-full  max-w-xl mx-auto">
+    <div className="w-full my-10 ax-w-xl mx-auto">
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-        <h2 className="text-2xl font-bold  mb-2">Donor Signup</h2>
-
         <div >
           <label className="block mb-1">Full Name *</label>
           <input
@@ -108,81 +101,6 @@ const DonorSignup = () => {
           </button>
         </div>
 
-        <div>
-          <label className="block mb-1">Address / Landmark *</label>
-          <textarea
-            name="address"
-            required
-            placeholder="E.g. near temple, market, etc."
-            className="w-full border px-3 py-2 rounded"
-            onChange={handleChange}
-          ></textarea>
-        </div>
-
-        <div className="grid grid-cols-2 gap-4">
-          <div>
-            <label className="block mb-1">Pincode *</label>
-            <input
-              type="number"
-              name="pincode"
-              required
-              placeholder="6-digit pincode"
-              className="w-full border px-3 py-2 rounded"
-              onChange={handleChange}
-            />
-          </div>
-
-          <div>
-            <label className="block mb-1">City / District</label>
-            <input
-              type="text"
-              name="city"
-              placeholder="Auto-fill if GPS enabled"
-              className="w-full border px-3 py-2 rounded"
-              onChange={handleChange}
-            />
-          </div>
-
-          <div>
-            <label className="block mb-1">State</label>
-            <select
-              name="state"
-              className="w-full border px-3 py-2 rounded"
-              onChange={handleChange}
-            >
-              <option value="">Select state</option>
-              <option value="UP">Uttar Pradesh</option>
-              <option value="MH">Maharashtra</option>
-              <option value="DL">Delhi</option>
-              <option value="RJ">Rajasthan</option>
-              <option value="KA">Karnataka</option>
-              {/* Add more states as needed */}
-            </select>
-          </div>
-
-          <div>
-            <label className="block mb-1">Profile Picture</label>
-            <input
-              type="file"
-              name="profilePic"
-              accept="image/*"
-              className="w-full border px-3 py-2 rounded"
-              onChange={handleChange}
-            />
-          </div>
-        </div>
-
-        <div>
-          <label className="block mb-1">Referral Code (optional)</label>
-          <input
-            type="text"
-            name="referralCode"
-            placeholder="Enter referral code if any"
-            className="w-full border px-3 py-2 rounded"
-            onChange={handleChange}
-          />
-        </div>
-
         <div className="flex items-center gap-2">
           <input
             type="checkbox"
@@ -206,4 +124,4 @@ const DonorSignup = () => {
   );
 };
 
-export default DonorSignup;
+export default SignupInputs;

@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import logo from './assets/logo.png'
 import { BiSolidCoin } from 'react-icons/bi'
 import { useState } from 'react'
-import Signup from './components/Signup/signup'
+import Signup from './components/Signup/Signup'
 import Login from './components/Login/login'
 const Navbar = () => {
   const [showSignup, setShowSignup ] = useState(false);

@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "title": "Motor",
+    "price": 200,
+    "description": "High-efficiency motor suitable for e-waste recycling.",
+    "category": "E-Waste",
+    "image": "https://images.unsplash.com/photo-1575505586569-646b2ca898fc?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 2,
+    "title": "Old Phone",
+    "price": 150,
+    "description": "Used smartphone in working condition.",
+    "category": "E-Waste",
+    "image": "https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 3,
+    "title": "Plastic Bottles",
+    "price": 10,
+    "description": "Bundle of 20 used plastic bottles.",
+    "category": "Plastic",
+    "image": "https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 4,
+    "title": "Aluminum Can",
+    "price": 5,
+    "description": "Empty aluminum drink can for metal recycling.",
+    "category": "Metal Waste",
+    "image": "https://images.unsplash.com/photo-1604404896565-a8d18a6d91c2?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 5,
+    "title": "Paper Stack",
+    "price": 20,
+    "description": "Set of used newspapers and magazines.",
+    "category": "Paper",
+    "image": "https://images.unsplash.com/photo-1510146758428-e5e4b17b8b6a?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 6,
+    "title": "Washing Machine",
+    "price": 500,
+    "description": "Old washing machine for recycling.",
+    "category": "E-Waste",
+    "image": "https://images.unsplash.com/photo-1626804475297-41608ea09aeb?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 7,
+    "title": "Iron Rod",
+    "price": 70,
+    "description": "Scrap iron rods for recycling.",
+    "category": "Metal Waste",
+    "image": "https://images.unsplash.com/photo-1611095772763-5b4d44d04792?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 8,
+    "title": "Used Notebook",
+    "price": 5,
+    "description": "Partially used paper notebook.",
+    "category": "Paper",
+    "image": "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 9,
+    "title": "Glass Bottle",
+    "price": 6,
+    "description": "Used green glass bottle.",
+    "category": "Glass",
+    "image": "https://images.unsplash.com/photo-1592194996308-7b43878e84b6?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 10,
+    "title": "Wrench Tool",
+    "price": 30,
+    "description": "Old metal wrench tool.",
+    "category": "Metal Waste",
+    "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 11,
+    "title": "Plastic Basket",
+    "price": 25,
+    "description": "Colored plastic basket, reusable.",
+    "category": "Plastic",
+    "image": "https://images.unsplash.com/photo-1567533666097-9e6f9b7d0b27?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 12,
+    "title": "Steel Spoon",
+    "price": 2,
+    "description": "Old steel kitchen spoon.",
+    "category": "Metal Waste",
+    "image": "https://images.unsplash.com/photo-1594489573454-3a9e7b2e4dab?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 13,
+    "title": "Shredded Paper",
+    "price": 3,
+    "description": "Recyclable shredded office paper.",
+    "category": "Paper",
+    "image": "https://images.unsplash.com/photo-1603481547570-023c8fd2c4e6?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 14,
+    "title": "Glass Cup",
+    "price": 5,
+    "description": "Reusable glass drinking cup.",
+    "category": "Glass",
+    "image": "https://images.unsplash.com/photo-1590071089560-5e3b88a52b6c?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 15,
+    "title": "Used Printer",
+    "price": 200,
+    "description": "Old inkjet printer for e-waste recycling.",
+    "category": "E-Waste",
+    "image": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 16,
+    "title": "Plastic Chair",
+    "price": 80,
+    "description": "Broken plastic chair.",
+    "category": "Plastic",
+    "image": "https://images.unsplash.com/photo-1592078615290-abb0f6d16782?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 17,
+    "title": "Computer Monitor",
+    "price": 220,
+    "description": "Old monitor for e-waste recycling.",
+    "category": "E-Waste",
+    "image": "https://images.unsplash.com/photo-1586210579191-33b45e38fa2c?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 18,
+    "title": "Plastic Bucket",
+    "price": 30,
+    "description": "Old plastic bucket for reuse.",
+    "category": "Plastic",
+    "image": "https://images.unsplash.com/photo-1598620617361-73d0c0f89cc7?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 19,
+    "title": "Metal Tray",
+    "price": 12,
+    "description": "Old steel food tray.",
+    "category": "Metal Waste",
+    "image": "https://images.unsplash.com/photo-1611930022073-8e2d7e1e1dc7?auto=format&fit=crop&w=600&h=400"
+  },
+  {
+    "id": 20,
+    "title": "Glass Plate",
+    "price": 7,
+    "description": "Clear glass dinner plate.",
+    "category": "Glass",
+    "image": "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?auto=format&fit=crop&w=600&h=400"
+  }
+]
