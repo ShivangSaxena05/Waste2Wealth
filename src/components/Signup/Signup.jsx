@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo.png";
 import SignupInputs from "./SignupInputs";
-
 const Signup = ({ onClose }) => {
   const [role, setrole] = useState("");
+
+
 
   return (
     <div

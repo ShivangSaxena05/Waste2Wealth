@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import {db} from "../../firebase"
+import { ref,get,child } from "firebase/database";
 
 const SignupInputs = ({role}) => {
   const [showPassword, setShowPassword] = useState(false);

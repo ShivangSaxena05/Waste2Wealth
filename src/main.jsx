@@ -9,12 +9,9 @@ import Footer from './Footer.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-    <Navbar/>
     <Routes>
-
       <Route path='/*' element={<App/>}/>
     </Routes>
-    <Footer/>
     </BrowserRouter>
   </StrictMode>,
 )
