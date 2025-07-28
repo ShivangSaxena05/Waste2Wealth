@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {db} from "../../firebase"
-import { ref,get,child } from "firebase/database";
+import { ref,get,child, set } from "firebase/database";
 
-const SignupInputs = ({role}) => {
+const SignupInputs = ({role, onlogins}) => {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
     role: role,
@@ -14,6 +14,10 @@ const SignupInputs = ({role}) => {
     acceptedTerms: false,
   });
 
+  useEffect(() => {
+    setFormData(prev => ({ ...prev, role }));
+  }, [role]);
+
   const handleChange = (e) => {
     const { name, value, type, checked, files } = e.target;
     const newValue =
@@ -22,7 +26,7 @@ const SignupInputs = ({role}) => {
     setFormData({ ...formData, [name]: newValue });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (formData.password !== formData.confirmPassword) {
       alert('Passwords do not match!');
@@ -32,6 +36,34 @@ const SignupInputs = ({role}) => {
       alert('You must accept the Terms & Privacy Policy.');
       return;
     }
+    try {
+      const snmail = formData.email.replace(/\./g, "_");
+      const userRef = ref(db,`users/${snmail}`);
+      const snapshot = await get(userRef);
+      if(snapshot.exists()){
+        alert("Email already exists");
+        return;
+      }
+      await set(userRef,{
+          name: formData.fullName,
+          email: formData.email,
+          mob: formData.phone,
+          userType: formData.role,
+          pass: formData.password
+        });
+        alert('Signup successful!');
+        onlogins({
+          name: formData.fullName,
+          email: formData.email,
+          mob: formData.phone,
+          userType: formData.role,
+          pass: formData.password
+        });
+    } catch (error) {
+      console.error("Signup Error:", error);
+      alert("Something went wrong. Please try again.");
+    }
+    
   };
 
   return (

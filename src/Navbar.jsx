@@ -1,15 +1,32 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "./assets/logo.png";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes ,FaUser} from "react-icons/fa";
 import { BiSolidCoin } from "react-icons/bi";
 import Signup from "./components/Signup/Signup";
-import Login from "./components/Login/login";
+import Login from "./components/Login/Login";
 
 const Navbar = () => {
   const [showSignup, setShowSignup] = useState(false);
   const [showLogIn, setShowLogIn] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const[user,setuser] = useState(null);
+  const [profileopen,setprofileopen] = useState(false);
+  const handleprofileopen = () =>{
+    setprofileopen(!profileopen);
+  }
+  useEffect(()=>{
+    const suser = JSON.parse(localStorage.getItem("user"));
+    if(suser){
+      setuser(suser);
+    }
+  },[])
+
+  const handleUser=()=>{
+    localStorage.removeItem("user");
+    setuser(null);
+    setprofileopen(false);
+  }
 
   const closeBox = () => {
     setShowLogIn(false);
@@ -68,14 +85,34 @@ const Navbar = () => {
             <span className="px-5 py-1 border border-black rounded-2xl flex items-center gap-3 justify-center">
               0 <BiSolidCoin />
             </span>
+
+            <div className="flex gap-5">
+          {user?(
+            <div className="relative">
+
             <button
-              onClick={() => {
+            className="border flex items-center gap-2 border-black rounded-t-2xl px-5 py-1 cursor-pointer"
+            onClick={handleprofileopen}>
+              {user.name}
+              <FaUser/>
+            </button>
+            {profileopen &&
+            (<div className="absolute top-8 cursor-pointer rounded-b-xl p-2 w-[145px] bg-gray-100 border border-gray-400">
+              <ul>
+                <li><button onClick={handleUser}>Logout</button></li>
+              </ul>
+            </div>
+            )}
+            </div>
+          ):(<>
+            <button
+            onClick={() => {
                 setShowSignup(true);
                 setShowLogIn(false);
                 setMenuOpen(false);
               }}
               className="px-4 py-1 bg-gray-200 border border-green-400 rounded-lg"
-            >
+              >
               Sign Up
             </button>
             <button
@@ -85,9 +122,11 @@ const Navbar = () => {
                 setMenuOpen(false);
               }}
               className="px-4 py-1 bg-gray-200 border border-green-400 rounded-lg"
-            >
+              >
               Log In
-            </button>
+            </button></>
+        )}
+          </div>
           </div>
           <hr />
           {showSignup ? (
@@ -96,20 +135,30 @@ const Navbar = () => {
               onClose={() => {
                 setShowSignup(false);
               }}
+              onlogins={(luser) => {
+                setuser(luser);
+                localStorage.setItem("user", JSON.stringify(luser));
+                setShowSignup(false);
+              }}
             />
           ) : null}
           {showLogIn ? (
             <Login
-              closeBox={closeBox}
-              onClose={() => {
-                setShowLogIn(false);
-              }}
-              openSignup={() => {
+            closeBox={closeBox}
+            onClose={() => {
+              setShowLogIn(false);
+            }}
+            onlogins={(luser)=>{
+              setuser(luser)
+              localStorage.setItem("user", JSON.stringify(luser))
+              setShowLogIn(false);
+            }}
+            openSignup={() => {
                 setShowLogIn(false);
                 setShowSignup(true);
               }}
-            />
-          ) : null}
+              />
+            ) : null}
         </div>
       </nav>
       <div className="category border border-y-black py-1 hidden md:block">

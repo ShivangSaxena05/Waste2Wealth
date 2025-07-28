@@ -4,7 +4,7 @@ import { FcGoogle } from 'react-icons/fc'
 import logo from "../../assets/logo.png"
 import {db} from "../../firebase"
 import { ref,get,child } from 'firebase/database'
-const Login = ({onClose,openSignup}) => {
+const Login = ({onClose,openSignup,onlogins}) => {
 
   const [email,setemail] = useState("");
   const [password,setpassword] = useState("");
@@ -19,7 +19,9 @@ const Login = ({onClose,openSignup}) => {
       if(snap.exists()){
         const user = snap.val();
         if(user.pass===password){
-          setmessage("Welcome"+user.name);
+          setmessage("Welcome "+user.name);
+          onlogins(user)
+          onClose()
         }else{
           setmessage("Incorrect Password");
         }

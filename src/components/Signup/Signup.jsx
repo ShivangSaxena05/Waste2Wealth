@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo.png";
 import SignupInputs from "./SignupInputs";
-const Signup = ({ onClose }) => {
+
+const Signup = ({ onClose, onlogins }) => {
   const [role, setrole] = useState("");
-
-
 
   return (
     <div
@@ -24,8 +23,8 @@ const Signup = ({ onClose }) => {
         <div className="flex text-lime-700 justify-evenly items-center border rounded-2xl border-gray-600">
           <div
             className={`font-bold text-lg px-3 py-2 w-full text-center cursor-pointer ${
-      role === "D" ? "bg-lime-700 text-white rounded-l-xl" : ""
-    }`}
+              role === "D" ? "bg-lime-700 text-white rounded-l-xl" : ""
+            }`}
             onClick={() => {
               setrole("D");
             }}
@@ -34,8 +33,8 @@ const Signup = ({ onClose }) => {
           </div>
           <div
             className={`font-bold text-lg px-3 py-2 w-full text-center border-x-1 cursor-pointer ${
-      role === "N" ? "bg-lime-700 text-white" : ""
-    }`}
+              role === "N" ? "bg-lime-700 text-white" : ""
+            }`}
             onClick={() => {
               setrole("N");
             }}
@@ -44,8 +43,8 @@ const Signup = ({ onClose }) => {
           </div>
           <div
             className={`font-bold text-lg px-3 py-2 w-full text-center cursor-pointer ${
-      role === "C" ? "bg-lime-700 text-white rounded-r-xl" : ""
-    }`}
+              role === "C" ? "bg-lime-700 text-white rounded-r-xl" : ""
+            }`}
             onClick={() => {
               setrole("C");
             }}
@@ -54,7 +53,7 @@ const Signup = ({ onClose }) => {
           </div>
         </div>
         <div>
-          <SignupInputs role={role} />
+          <SignupInputs role={role} onlogins={onlogins} />
         </div>
       </div>
     </div>
